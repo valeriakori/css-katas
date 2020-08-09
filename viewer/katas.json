@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "katas": [
+        {
+          "id": "button",
+          "name": "Button"
+        },
+        {
+          "id": "n26-card",
+          "name": "N26 Card"
+        }
+      ]
+    }
+  ]
+}

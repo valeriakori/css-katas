@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "katas": [
+        {
+          "id": "button",
+          "name": "Button"
+        },
+        {
+          "id": "input",
+          "name": "Input Field"
+        },
+        {
+          "id": "error-alert",
+          "name": "Error Alert"
+        },
+        {
+          "id": "info-alert",
+          "name": "Info Alert"
+        },
+        {
+          "id": "n26-card",
+          "name": "N26 Card"
+        },
+        {
+          "id": "signin-form",
+          "name": "Sign In Form"
+        }
+      ]
+    }
+  ]
+}

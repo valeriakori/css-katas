@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Alert</title>
+  </head>
+  <body>
+    <div class="info-alert" role="alert">
+      <div class="info-alert-content">
+        <div class="info-alert-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path
+              d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"
+            />
+          </svg>
+        </div>
+        <div>
+          <h2>Our privacy policy has changed</h2>
+          <p>
+            Make sure you know how these changes affect you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        margin: 1rem;
+      }
+      .info-alert {
+        max-width: 48rem;
+        margin: auto;
+        background-color: #e6fffa;
+        border-top: 4px solid #38b2ac;
+        color: #234e52;
+        padding: 0.75rem 1rem;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .info-alert-content {
+        display: flex;
+      }
+
+      .info-alert-icon {
+        padding: 0.25rem 0;
+      }
+
+      .info-alert-icon svg {
+        fill: #38b2ac;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      .info-alert h2 {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+      .info-alert p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+    </style>
+  </body>
+</html>

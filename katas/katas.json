@@ -25,6 +25,10 @@
           "name": "N26 Card"
         },
         {
+          "id": "navigation",
+          "name": "Navigation"
+        },
+        {
           "id": "signin-form",
           "name": "Sign In Form"
         }

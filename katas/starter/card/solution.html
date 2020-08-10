@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1483664852095-d6cc6870702d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        alt="Winter Sunset"
+      />
+      <div class="card-content">
+        <h3>The Coldest Sunset</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod sit
+          exercitationem tempore similique reprehenderit quisquam at numquam!
+        </p>
+      </div>
+      <div class="card-tags">
+        <div class="tag">#photography</div>
+        <div class="tag">#travel</div>
+        <div class="tag">#winter</div>
+      </div>
+    </div>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        margin: 1rem;
+        font-family: sans-serif;
+      }
+
+      .card {
+        color: #4a5568;
+        border-radius: 0.25rem;
+        max-width: 24rem;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      .card img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .card-content {
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-content h3 {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .card-tags {
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+      }
+
+      .tag {
+        background-color: #edf2f7;
+        display: inline-block;
+        border-radius: 9999px;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      .tag + .tag {
+        color: #4a5568;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <div class="field field-username">
+          <label for="username">
+            Username
+          </label>
+          <input id="username" type="text" placeholder="Username" />
+          <p class="error-message">Please insert a username.</p>
+        </div>
+        <div class="field field-password">
+          <label for="password">
+            Password
+          </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="******************"
+          />
+          <p class="error-message">Please choose a password.</p>
+        </div>
+        <div class="button-group">
+          <button class="btn" type="button">
+            Sign In
+          </button>
+          <a
+            class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+            href="#"
+          >
+            Forgot Password?
+          </a>
+        </div>
+      </form>
+      <p class="copyright">
+        &copy;2020 Acme Corp. All rights reserved.
+      </p>
+    </div>
+
+    <script>
+      // There's a lot of code duplication here to keep the code simple.
+      // Try refactoring it.
+      const userNameInput = document.getElementById("username");
+      const userNameField = document.querySelector(".field-username");
+
+      userNameInput.addEventListener("blur", () => {
+        if (userNameInput.value.trim() == "") {
+          userNameField.classList.add("error");
+        } else {
+          userNameField.classList.remove("error");
+        }
+      });
+
+      userNameInput.addEventListener("input", () => {
+        if (userNameInput.value.trim() == "") {
+          userNameField.classList.add("error");
+        } else {
+          userNameField.classList.remove("error");
+        }
+      });
+
+      const passwordInput = document.getElementById("password");
+      const passwordField = document.querySelector(".field-password");
+
+      passwordInput.addEventListener("blur", () => {
+        if (passwordInput.value.trim() == "") {
+          passwordField.classList.add("error");
+        } else {
+          passwordField.classList.remove("error");
+        }
+      });
+
+      passwordInput.addEventListener("input", () => {
+        if (passwordInput.value.trim() == "") {
+          passwordField.classList.add("error");
+        } else {
+          passwordField.classList.remove("error");
+        }
+      });
+    </script>
+    <style>
+      .field .error-message {
+        display: none;
+      }
+
+      .field.error .error-message {
+        display: block;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #edf2f7;
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0.5rem;
+      }
+
+      .form-container {
+        width: 100%;
+        max-width: 24rem;
+      }
+
+      form {
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-radius: 0.25rem;
+        padding: 2rem;
+        padding-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .field label {
+        display: block;
+        color: #4a5568;
+        font-size: 0.875rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .field input {
+        outline: none;
+        border: none;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        appearance: none;
+        border-width: 1px;
+        border-radius: 0.25rem;
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        color: #4a5568;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+      }
+
+      .field input:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      }
+
+      .field.error input {
+        border: 1px solid #f56565;
+        margin-bottom: 0.75rem;
+      }
+
+      .field .error-message {
+        font-size: 0.75rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        color: #f56565;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      button {
+        background-color: #4299e1;
+        color: white;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:focus {
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      }
+      button:hover {
+        background-color: #2b6cb0;
+      }
+
+      .button-group a {
+        display: inline-block;
+        vertical-align: baseline;
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-decoration: none;
+        color: #4299e1;
+      }
+
+      .button-group a:hover {
+        color: #2c5282;
+      }
+
+      p.copyright {
+        text-align: center;
+        color: #a0aec0;
+        font-size: 0.75rem;
+      }
+    </style>
+  </body>
+</html>

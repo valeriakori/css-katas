@@ -33,6 +33,32 @@
           "name": "Sign In Form"
         }
       ]
+    },
+    {
+      "id": "javascript",
+      "name": "Javascript",
+      "katas": [
+        {
+          "id": "dark-mode",
+          "name": "Toggle Dark Mode"
+        },
+        {
+          "id": "hamburger-menu",
+          "name": "Hamburger Menu"
+        },
+        {
+          "id": "dropdown",
+          "name": "Dropdown"
+        },
+        {
+          "id": "image-slider",
+          "name": "Image Slider"
+        },
+        {
+          "id": "form-validation",
+          "name": "Form Validation"
+        }
+      ]
     }
   ]
 }

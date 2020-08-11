@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Pricing</a>
+        <a href="">Docs</a>
+        <div class="dropdown-container hide-dropdown">
+          <button id="show-more-button">
+            <span>More</span>
+            <svg
+              class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              height="1.5rem"
+              width="1.5rem"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div class="dropdown">
+            <ul>
+              <li>
+                <a href="">Help Center</a>
+              </li>
+              <li>
+                <a href="">Guides</a>
+              </li>
+              <li>
+                <a href="">Events</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      const dropDownContainer = document.querySelector(".dropdown-container");
+      const showMoreButton = document.getElementById("show-more-button");
+      showMoreButton.addEventListener("click", (event) => {
+        dropDownContainer.classList.toggle("hide-dropdown");
+        event.stopPropagation();
+      });
+      document.addEventListener("click", (event) => {
+        dropDownContainer.classList.add("hide-dropdown");
+      });
+    </script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        color: #4a5568;
+      }
+
+      nav {
+        display: flex;
+        gap: 1rem;
+        align-items: baseline;
+        padding: 1rem;
+        padding-left: 2rem;
+        background-color: #ebf4ff;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        color: inherit;
+      }
+
+      a:hover,
+      button:hover * {
+        color: #5a67d8;
+      }
+
+      #drop-down-button {
+        position: relative;
+      }
+
+      .dropdown-container {
+        position: relative;
+      }
+
+      .dropdown {
+        padding: 0.5rem;
+        position: absolute;
+        width: 100vw;
+        max-width: calc(100% + 5rem);
+        left: 50%;
+        margin-top: 0.25rem;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      .hide-dropdown .dropdown {
+        display: none;
+      }
+
+      .dropdown ul {
+        list-style-type: none;
+      }
+
+      .dropdown li {
+        margin: 0.5rem;
+      }
+    </style>
+  </body>
+</html>

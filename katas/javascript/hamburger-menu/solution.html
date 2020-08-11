@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger</title>
+  </head>
+  <body>
+    <header class="menu-closed">
+      <button id="open-menu-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          aria-hidden="true"
+          focusable="false"
+          width="1em"
+          height="1em"
+          style="
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          "
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1z"
+          />
+        </svg>
+      </button>
+      <nav>
+        <button
+          id="close-menu-button"
+          style="
+            width: 2rem;
+            height: 2rem;
+            transform: rotate(45deg);
+            font-size: 2rem;
+          "
+        >
+          +
+        </button>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Docs</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Imprint</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+      const header = document.querySelector("header");
+      document
+        .getElementById("close-menu-button")
+        .addEventListener("click", () => {
+          header.classList.add("menu-closed");
+        });
+      document
+        .getElementById("open-menu-button")
+        .addEventListener("click", () => {
+          header.classList.remove("menu-closed");
+        });
+    </script>
+    <style>
+      .menu-closed nav {
+        display: none;
+      }
+
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      header {
+        padding: 0.5rem 0.25rem;
+      }
+
+      button {
+        cursor: pointer;
+        background: none;
+        outline: none;
+        appearance: none;
+        border: none;
+        color: #626262;
+        fill: #626262;
+      }
+
+      #open-menu-button {
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+      }
+
+      #close-menu-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0.75rem 0.5rem;
+      }
+
+      button:hover {
+        color: black;
+        fill: black;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      nav {
+        padding-top: 0.25rem;
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: white;
+      }
+
+      nav a {
+        color: #424242;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav li {
+        padding: 1rem 2rem;
+        padding-left: 3rem;
+        border-bottom: 1px solid #cfcfcf;
+      }
+
+      nav a:hover {
+        color: #4299e1;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </body>
+</html>

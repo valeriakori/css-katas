@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="style-controls">
+        <button id="light-mode-button">Light</button
+        ><button id="dark-mode-button">Dark</button>
+      </div>
+    </header>
+    <main>
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+        provident quisquam id.
+      </p>
+    </main>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .style-controls {
+        padding: 0.25rem;
+        display: flex;
+        gap: 0.25rem;
+      }
+
+      button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        line-height: 1.5;
+        background-color: #4299e1;
+        border-radius: 0.25rem;
+      }
+
+      #light-mode-button,
+      button:hover {
+        background-color: #2b6cb0;
+        text-decoration: underline;
+      }
+
+      .dark-mode #light-mode-button {
+        background-color: #4299e1;
+        text-decoration: none;
+      }
+
+      #dark-mode-button {
+        color: black;
+      }
+      .dark-mode #dark-mode-button {
+        background-color: #2b6cb0;
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .dark-mode main {
+        background-color: rgb(36, 34, 34);
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </body>
+</html>

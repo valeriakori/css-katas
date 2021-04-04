@@ -5,6 +5,14 @@
       "name": "Starter",
       "katas": [
         {
+          "id": "html-intro",
+          "name": "HTML Intro"
+        },
+        {
+          "id": "css-intro",
+          "name": "CSS Intro"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

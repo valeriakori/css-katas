@@ -17,6 +17,10 @@
           "name": "Quora Question Card"
         },
         {
+          "id": "absolutely-positioned-border",
+          "name": "Absolutely Positioned Border"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

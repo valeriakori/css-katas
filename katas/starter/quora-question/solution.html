@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora Question Card</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #F1F2F2;
+            --white: #ffffff;
+            --dark-gray: #999;
+            --light-gray: #c9c9c9;
+            --dark-blue: #2b6dad;
+        }
+
+        html {
+            font-size: 16px;
+            background-color: var(--background);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        section {
+            background-color: var(--white);
+            padding: 1rem;
+            max-width: 35rem;
+            margin: 2rem auto;
+            border-style: solid;
+            border-width: 1px;
+            border-color: var(--light-gray);
+        }
+
+        .question {
+            font-weight: bolder;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-section>* {
+            font-weight: bold;
+            display: inline;
+        }
+
+        .author-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-image {
+            height: 2rem;
+            width: 2rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .post-date {
+            font-weight: initial;
+            font-size: 0.75rem;
+            color: var(--dark-gray);
+        }
+
+        .answer {
+            margin-bottom: 1.5rem;
+        }
+
+        .answer ul li {
+            margin-bottom: 0.75rem;
+            /* discovered at https://stackoverflow.com/questions/23324449/li-not-moving-bullets-with-padding/23324499 */
+            list-style-position: inside;
+        }
+
+        .reaction-section {
+            height: 2rem;
+            color: var(--dark-gray);
+            margin-top: 2rem;
+        }
+
+        .reaction-section .like-button,
+        .reaction-section .dislike-button {
+            background-color: var(--background);
+            box-sizing: content-box;
+        }
+
+        .reaction-section .dislike-button {
+            padding: 0.5rem;
+        }
+
+        .reaction-section .like-button {
+            padding: 0.5rem 1rem;
+        }
+
+        .reaction-section .like-button i {
+            color: aqua;
+            margin-right: 5px;
+            color: var(--dark-blue);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="question">What advice would you give to a person aspiring a job in tech? </p>
+        <div class="author-section">
+            <img class="profile-image" src="https://cdn.dribbble.com/users/1827485/screenshots/4266390/spiderman-01.png"
+                alt="Your friendly neighborhood Dev Profile Image">
+            <p class="authorname">Your Friendly Neighborhood Dev <span class="post-date">- June 14</span></p>
+        </div>
+        <div class="answer">
+            <ul>
+                <li>Start your own little projects when you can, so you can give yourself the opportunity to put what
+                    you’ve
+                    learned into practice somewhere where you’ll see immediate results (no waiting on co-workers to
+                    approve
+                    Code Reviews, no needing enough permissions to make changes, etc), and figuring out what works well
+                    and
+                    what doesn’t. You might even end up with something cool that could actually make you some money
+                </li>
+                <li>Be a life long learner. In tech there is so much to know from frontend to microservices to design to
+                    product development. Sure, you won't be able to learn and master everything. Rather focus on what
+                    you
+                    are passionate about and the progress you have made so far
+                </li>
+                <li>Always try to remix the result if you followed a tutorial/walktrhough. See if you can implement the
+                    thing in another way, add a new feature, try explaining it to someone else
+                </li>
+                <li>Put yourself out there. Networking sounds lame, but going to meetups, talking to people involved in
+                    the
+                    tech community or attending hackathons opens up many opportunities you would find on regular job
+                    listings
+                </li>
+            </ul>
+        </div>
+        <div class="reaction-section">
+            <span class="like-button"><i class="fas fa-arrow-up"></i>118</span><span class="dislike-button"><i
+                    class="fas fa-arrow-down"></i></span>
+            <span class="repost-button"><i class="fas fa-retweet"></i></span>
+            <span class="comment-button"><i class="far fa-comment"></i></span>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -17,6 +17,10 @@
           "name": "Quora Question Card"
         },
         {
+          "id": "notification-badge",
+          "name": "Notification Badge"
+        },
+        {
           "id": "absolutely-positioned-border",
           "name": "Absolutely Positioned Border"
         },

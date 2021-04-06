@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem
+        }
+
+        .triangle {
+            border-left: 57.5px solid transparent;
+            border-right: 57.5px solid transparent;
+            border-bottom: 100px solid #e3000f;
+        }
+
+        .circle {
+            height: auto;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #ffdd00;
+            margin: 0 2rem
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #006b94;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="triangle"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <title>Card with Shapes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --light-blue: #304C7C;
+            --blue: #005DFF;
+            --light-teal: #99beff;
+            --background-color: #e6efff;
+            --darker-blue: #304C7C;
+        }
+
+        .blue-section {
+            max-width: 40rem;
+            background-color: var(--background-color);
+            color: var (lightblue);
+            padding: 2rem 4rem;
+            box-sizing: border-box;
+            border-radius: 3rem 0 0 0;
+            position: relative;
+        }
+
+        .darkblue-quarter {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: var(--blue);
+            border-radius: 0 0 0 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .lightblue-quarter {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: var(--light-teal);
+            border-radius: 0 0 0 40px;
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+
+        h3 {
+            color: var(--blue);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blue-section p {
+            font-weight: bold;
+            color: var(--darker-blue);
+            padding-right: 40px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .fa-check {
+            color: var(--blue);
+            margin-right: 5px;
+        }
+
+        .blue-section button {
+            background-color: var(--blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            font-weight: bold;
+            border-radius: 100px;
+        }
+
+        .blue-section button:hover {
+            background-color: var(--darker-blue);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="blue-section">
+        <h3>
+            Free
+        </h3>
+        <p>
+            Perfect to start collecting feedback for your app
+        </p>
+        <p><i class="fas fa-check"></i>25 total feedback submissions</p>
+        <button class="blue-button">Get Started ></button>
+        <div class="lightblue-quarter"></div>
+        <div class="darkblue-quarter"></div>
+    </section>
+</body>
+
+</html>

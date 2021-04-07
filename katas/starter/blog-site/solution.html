@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --shadow: #999
+        }
+
+        .navigation-bar {
+            position: fixed;
+            width: 100%;
+            height: 3.5rem;
+            background-color: #DEDEDE;
+            box-shadow: 0px 1px 10px var(--shadow);
+            text-align: center;
+            top: 0;
+        }
+
+        .navigation-list {
+            margin-top: 1rem;
+        }
+
+        .navigation-list>* {
+            display: inline;
+            list-style-type: none;
+            padding-right: 1rem;
+        }
+
+        main {
+            margin-top: 4rem;
+            padding: 1rem 2rem;
+        }
+
+        article {
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <ul class="navigation-list">
+            <li><a class="navigation-item" href="#">Home</a></li>
+            <li><a class="navigation-item" href="#">Blog</a></li>
+            <li><a class="navigation-item" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to my Blog about Web Dev Ressources!</h1>
+        <h2>~ The ultimate guide to dummy data and other tools~</h2>
+        <article>
+            <h3>
+                {placekitten} - Placeholder kitten images for developers</h3>
+            <p>A quick and simple service for getting pictures of kittens for use as placeholders in your designs or
+                code. Just put your image size (width & height) after our URL and you'll get a placeholder.</p>
+            <code>Like this: http://placekitten.com/200/300 <br />
+                  or: http://placekitten.com/g/200/300</code>
+        </article>
+        <article>
+            <a
+                href="https://www.shopify.com/partners/blog/79940998-15-funny-lorem-ipsum-generators-to-shake-up-your-design-mockups">
+                <h3>15 Funny Lorem Ipsum Generators to Shake Up Your Design Mockups</h3>
+            </a>
+
+            <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used
+                as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. Luckily, there are
+                dozens of funny lorem ipsum generators out there, to help add some flavor to your mockups. <a
+                    href="https://www.shopify.com/partners/blog/79940998-15-funny-lorem-ipsum-generators-to-shake-up-your-design-mockups"></a>
+            </p>
+        </article>
+        <article>
+            <a href="https://coverr.co/">
+                <h3>coverr.co</h3>
+            </a>
+            <p>
+                A picture says more than a thousand words. But sometimes a video is way more immersive (e.g. on the <a
+                    href="https://devhausleipzig.de/">DEVHAUS Leipzig site</a>)
+            </p>
+        </article>
+        <article>
+            <a href="https://mycolor.space/">
+                <h3>mycolor.space</h3>
+            </a>
+            <p> Never waste Hours on finding the perfect Color Palette again!
+                Just Enter a Color!
+
+                And Generate nice Color Palettes </p>
+        </article>
+        <article>
+            <a href="https://www.canva.com/colors/color-palette-generator/">
+                <h3>Canva</h3>
+            </a>
+            <p>The easiest place to get colors from your photos
+
+                Want a color scheme that perfectly matches your favorite images? With Canva’s color palette generator,
+                you can create color combinations in seconds. Simply upload a photo, and we’ll use the hues in the photo
+                to create your palette.</p>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

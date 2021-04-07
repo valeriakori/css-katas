@@ -25,6 +25,10 @@
           "name": "Absolutely Positioned Border"
         },
         {
+          "id": "bauhaus-shapes",
+          "name": "Bauhaus Shapes"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

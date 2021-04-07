@@ -29,6 +29,22 @@
           "name": "Bauhaus Shapes"
         },
         {
+          "id": "card-shapes",
+          "name": "Card with Shapes"
+        },
+        {
+          "id": "blog-site",
+          "name": "Blog Site"
+        },
+        {
+          "id": "flexbox-intro",
+          "name": "Flexbox Playground"
+        },
+        {
+          "id": "hero-banner",
+          "name": "Hero Banner"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

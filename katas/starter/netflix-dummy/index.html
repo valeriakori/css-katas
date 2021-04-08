@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 16px;
+        }
+        .video-container{
+            width: 100%;
+            position: relative;
+        }
+
+        .video-controls{
+            flex-direction: row;
+            display: flex;
+            border: 3px solid white;
+            justify-content: space-around;
+            border-radius: 50px;
+            position: absolute;
+            margin: 0 auto;
+            bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 40%;
+            height: 50px;
+            align-items: center;
+            list-style-type: none;
+            padding: 1rem 1rem;
+
+        }
+        button{
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+
+        video{
+            width: 100%;
+            position: relative;
+        }
+        .isPlaying{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video src="./doggo.mp4" id="dog-video">
+        Your Browser does not video tag</video> 
+        <!-- "The content inside the opening and closing <video></video> tags is shown as a fallback in browsers that don't support the element." -->
+        <ul class="video-controls">
+            <li><button id="play-button" class="myBtn"><i class="fas fa-play"></i></button></li>
+            <li><button id="pause-button"><i class="fas fa-pause"></i></button></li>
+            <li><button id="normal-speed-button">1x</button></li>
+            <li><button id="double-speed-button">2x</button></li>
+        </ul>
+    </div>
+    <script lang="text/javascript">
+
+    const video = document.getElementById("dog-video");
+    const playButton = document.getElementById("play-button");
+    playButton.addEventListener("click", play);
+
+    function play() {
+        playButton.classList.add("is-playing")
+        video.play();
+    }
+
+    const doubleSpeedButton = document.getElementById("double-speed-button")
+    doubleSpeedButton.addEventListener("click", increaseSpeed);
+    
+    function increaseSpeed(){
+        video.playbackRate = 2;
+    }
+
+    const pauseButton = document.getElementById("pause-button")
+    pauseButton.addEventListener("click", pauseVideo)
+
+    function pauseVideo(){
+        video.pause();
+    }
+
+    const normalSpeedButton = document.getElementById("normal-speed-button")
+    normalSpeedButton.addEventListener("click", normalSpeed)
+
+    function normalSpeed(){
+        video.playbackRate = 1;
+    }
+ 
+
+    </script>
+</body>
+</html>

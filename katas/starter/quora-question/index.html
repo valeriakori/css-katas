@@ -1,6 +1,11 @@
-<script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+<head><script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
 
 <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
     :root {
         --background: #F1F2F2;
         --white: #ffffff;
@@ -8,15 +13,36 @@
         --light-gray: #c9c9c9;
         --dark-blue: #2b6dad;
     }
+
+    html {
+        font-size: 16px;
+        background-color: var(--background);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+   section{
+
+   }
+
+    .profile-image {
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        object-fit: cover;
+    }
 </style>
+</head>
+<body>
+    <section>
+<div><p class= "question">What advice would you give to a person aspiring a job in tech?</p></div>
 
 
-<img class="profile-image" src="https://cdn.dribbble.com/users/1827485/screenshots/4266390/spiderman-01.png"
-    alt="Your friendly neighborhood Dev Profile Image">
-<p class="authorname">Your Friendly Neighborhood Dev <span class="post-date">- June 14</span></p>
+<div><img class="profile-image" src="https://cdn.dribbble.com/users/1827485/screenshots/4266390/spiderman-01.png"
+    alt="Your friendly neighborhood Dev Profile Image"></div>
+<div><p class="authorname">Your Friendly Neighborhood Dev <span class="post-date">- June 14</span></p></div>
 
 
-<ul>
+<div class="answer"><ul>
     <li>Start your own little projects when you can, so you can give yourself the opportunity to put what
         you’ve
         learned into practice somewhere where you’ll see immediate results (no waiting on co-workers to
@@ -38,4 +64,10 @@
         tech community or attending hackathons opens up many opportunities you would find on regular job
         listings
     </li>
-</ul>
+</ul></div class="reaction-section"> 
+<span class="like-button"><i class="fas fa-arrow-up"></i>118</span><span class="dislike-button"><i
+    class="fas fa-arrow-down"></i></span>
+    <span class="repost-button"><i class="fas fa-retweet"></i></span>
+    <span class="comment-button"><i class="far fa-comment"></i></span>
+</section>
+</body>

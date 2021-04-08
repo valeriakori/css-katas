@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        .video-container {
+            width: 100%;
+            position: relative;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 3rem;
+            width: 100%;
+        }
+
+        /* .video-container:hover ul {
+            display: flex;
+        } 
+        Set the display property of the ul to none
+        and comment out this block and see what happens!
+        */
+
+        .video-controls ul {
+            list-style-type: none;
+
+            display: flex;
+            justify-content: center;
+
+            border: 3px solid white;
+            width: max-content;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 100px;
+            font-size: 2rem;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .video-controls ul li {
+            margin-right: 1rem;
+        }
+
+        .video-controls ul li button {
+            height: 3rem;
+            width: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video muted="false" id="video" src="./doggo.mp4"></video>
+        <div class="video-controls">
+            <ul>
+                <li><button id="play-button"><i class="fas fa-play"></i></button></li>
+                <li><button id="pause-button"><i class="fas fa-pause"></i></button></li>
+                <li><button id="normal-speed-button">1x</button></li>
+                <li><button id="double-speed-button">2x</button></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+        const video = document.getElementById("video")
+        const playBtn = document.getElementById('play-button')
+
+        playBtn.addEventListener('click', play)
+        function play(e) {
+            video.play();
+        }
+
+        const pauseBtn = document.getElementById('pause-button');
+
+        pauseBtn.addEventListener('click', pause)
+        function pause() {
+            video.pause();
+        }
+
+        const normalSpeedButton = document.getElementById('normal-speed-button');
+
+        normalSpeedButton.addEventListener('click', setRegularSpeed)
+        function setRegularSpeed() {
+            video.playbackRate = 1;
+        }
+
+        const duobleSpeedButton = document.getElementById('double-speed-button');
+        duobleSpeedButton.addEventListener('click', setDoubleSpeed)
+        function setDoubleSpeed() {
+            video.playbackRate = 2;
+        }
+    </script>
+</body>
+
+</html>

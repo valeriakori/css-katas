@@ -34,7 +34,7 @@
         },
         {
           "id": "blog-site",
-          "name": "Blog Site"
+          "name": "(WiP) Blog Site"
         },
         {
           "id": "flexbox-intro",
@@ -42,7 +42,11 @@
         },
         {
           "id": "hero-banner",
-          "name": "Hero Banner"
+          "name": "(WiP) Hero Banner"
+        },
+        {
+          "id": "netflix-dummy",
+          "name": "Netflix Dummy"
         },
         {
           "id": "button",

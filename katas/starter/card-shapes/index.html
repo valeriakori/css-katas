@@ -10,12 +10,100 @@ Source: https://feedback.fish/
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
 
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        :root {
+            --light-blue: #304C7C;
+            --blue: #005DFF;
+            --light-teal: #99beff;
+            --background-color: #e6efff;
+            --darker-blue: #304C7C;
+        }
+
+        body {
+            margin: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            background-color: var(--blue);
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: var(--light-blue);
+        }
+
+        .blue-section {
+            background-color: var(--background-color);
+            /* margin-top: 1 rem; That's rubbish -> define margin from the outside?! */
+            padding: 2rem 2.5rem;
+            border-radius: 2rem 0 0 0;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .blue-section h3 {
+            color: var(--blue);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .blue-section p {
+            color: var(--darker-blue);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .pizza-slice-dark {
+            height: 40px;
+            width: 40px;
+            background-color: blue;
+            border-radius: 0px 0px 0px 40px;
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+            position: absolute;
+        }
+
+        .pizza-slice-light {
+            height: 40px;
+            width: 40px;
+            background-color: var(--light-blue);
+            border-radius: 0px 0px 0px 40px;
+            position: absolute;
+            top: 2.5rem;
+            right: 0;
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
-
+    <section class="blue-section">
+        <h3>Free</h3>
+        <p>Perfect to start collecting feedback for your app</p>
+        <p><i class="fas fa-check"></i>25 total feedback submissions</p>
+        <button>Get Started ></button>
+        <div class="pizza-slice-dark"></div>
+        <div class="pizza-slice-light"></div>
+    </section>
 </body>
 
 </html>

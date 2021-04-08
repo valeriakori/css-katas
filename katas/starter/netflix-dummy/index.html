@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  .video-container {
+    width: 100%;
+    position: relative;
+  }
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 40%;
+    background-color: rgba(169, 169, 169, 0.7);
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 8rem;
+  }
+</style>
+
+<body>
+  <div class="video-container">
+    <video src="./doggo.mp4" id="dog-video">
+      There should be a dog video here. Apparently your browser does not support this.
+    </video>
+    <ul class="control-bar">
+      <li><button id="play-pause"><i id="playPauseIcon" class="fas fa-play"></i></button></li>
+      <!-- <li><button id="pause-button"><i class="fas fa-pause"></i></button></li> -->
+      <!-- <li><button id="normal-speed-button">1x</button></li> -->
+      <li><button id="double-speed-button"><i class="fas fa-fast-forward"></i></button></li>
+    </ul>
+  </div>
+
+  <script>
+
+    const video = document.getElementById("dog-video");
+    // getting the element
+    const playButton = document.getElementById("play-button");
+    const pauseButton = document.getElementById("pause-button");
+    const playPauseButton = document.getElementById("play-pause");
+    const playPauseIcon = document.getElementById("playPauseIcon");
+    const normalSpeedButton = document.getElementById("normal-speed-button");
+    const doubleSpeedButton = document.getElementById("double-speed-button");
+
+    // set the event listener
+    // playButton.addEventListener('click', playVideo);
+    playPauseButton.addEventListener('click', playPause);
+    // pauseButton.addEventListener('click', pauseVideo);
+    // normalSpeedButton.addEventListener('click', normalSpeed)
+    doubleSpeedButton.addEventListener('click', controlSpeed)
+
+    // define callback functions
+    function playPause() {
+      if (video.paused == true) {
+        video.play();
+        playPauseIcon.classList.toggle("fa-play");
+        playPauseIcon.classList.toggle("fa-pause");
+      } else {
+        video.pause();
+        playPauseIcon.classList.toggle("fa-play");
+        playPauseIcon.classList.toggle("fa-pause");
+      }
+    }
+
+    function controlSpeed() {
+      if (video.playbackRate == 1) {
+        video.playbackRate = 2;
+        video.play();
+        playPauseIcon.classList.toggle("fa-fast-forward");
+        playPauseIcon.classList.toggle("fa-step-forward");
+      } else {
+        video.playbackRate = 1;
+        video.play();
+        playPauseIcon.classList.toggle("fa-fast-forward");
+        playPauseIcon.classList.toggle("fa-step-forward");
+      }
+    }
+
+    function increaseSpeed() {
+      video.playbackRate = 2;
+      video.play();
+    }
+
+    function normalSpeed() {
+      video.playbackRate = 1;
+      video.play()
+    }
+
+    function playVideo() {
+      video.play()
+    }
+
+    function pauseVideo() {
+      video.pause()
+    }
+
+  </script>
+</body>
+
+</html>

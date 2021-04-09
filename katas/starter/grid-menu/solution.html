@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Titillium+Web:900&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Defining recurring colors */
+    :root {
+        --yellow: rgb(235, 217, 190);
+        --black: rgb(52, 50, 49);
+    }
+
+    /*Some setup*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* Reset */
+
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 15px auto;
+
+        /* Here comes the magic */
+        display: grid;
+        grid-gap: 5px;
+        /* grid-template-columns: 200px 200px 200px; */
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 170px 68px 170px 140px 196px;
+    }
+
+    .container div {
+        border: 1px solid var(--black);
+    }
+
+
+    .breakfast_menu {
+        grid-column: 2 / 4;
+        grid-row: 1 / 4;
+    }
+
+    .whitespace {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .juice_heading {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .juice_menu {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .hotdrinks_heading {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .hotdrinks_menu {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="breakfast_heading">Breakfast</div>
+
+        <div class="time">Served until 11:30am</div>
+
+        <div class="breakfast_menu">
+            <p>The Full Breakfast</p>
+        </div>
+
+        <div class="juice_heading">
+            Energiser<br />
+            Juices
+        </div>
+
+        <div class="juice_menu">
+            <ul>
+                <li>Watermelon</li>
+            </ul>
+        </div>
+
+        <div class="hotdrinks_heading">Hot Drinks</div>
+        <div class="hotdrinks_menu">
+            <ul>
+                <li>Tea <span>2.35</span></li>
+            </ul>
+        </div>
+        <div class="whitespace">whitespace</div>
+    </div>
+</body>
+
+</html>

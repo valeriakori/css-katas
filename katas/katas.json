@@ -49,6 +49,14 @@
           "name": "Netflix Dummy"
         },
         {
+          "id": "grid-menu",
+          "name": "Grid Menu"
+        },
+        {
+          "id": "grid-template-areas",
+          "name": "Grid Template Areas"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

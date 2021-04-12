@@ -8,7 +8,10 @@
     <title>Dev.to</title>
     <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
     <style>
-        :root {}
+        :root {
+            --teal: rgb(54, 161, 139);
+            --hover-background: rgb(72, 172, 152, 0.5);
+        }
 
         * {
             margin: 0;
@@ -19,11 +22,42 @@
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        .nav-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            box-shadow: 0 0.125rem 0.25rem 0 lightgray;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px;
+            color: black;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background-color: var(--teal);
+            color: var(--hover-font-link);
+        }
+
+        button {
+            color: white;
+            background-color: var(--teal);
+            border: none;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            box-shadow: 0 0.125rem 0.25rem 0 lightgray;
+        }
     </style>
 </head>
 
 <body>
-    <section>
+    <section class="nav-section">
         <div class="logo-container">
             <p>N26</p>
         </div>

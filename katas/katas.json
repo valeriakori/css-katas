@@ -73,6 +73,14 @@
           "name": "Navigation"
         },
         {
+          "id": "form-intro",
+          "name": "Form Intro"
+        },
+        {
+          "id": "newsletter-wucu",
+          "name": "Newsletter Subscription Box"
+        },
+        {
           "id": "button",
           "name": "Button"
         },

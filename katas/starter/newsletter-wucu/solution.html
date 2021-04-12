@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription Box</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --box-background: rgb(199, 182, 164);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            font-family: 'Calligraffitti', cursive;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-container {
+            background-color: var(--box-background);
+            padding: 3rem;
+            width: 75%;
+            /* horizontal centering magic */
+            margin: 2rem auto;
+        }
+
+        .input-container {
+            display: flex;
+            border: none;
+            background-image: none;
+            border-radius: 0;
+        }
+
+        .input-field {
+            flex: 2 1 0%;
+            padding: 18px 20px;
+            border: 1px solid white;
+            margin-right: 20px;
+
+
+        }
+
+        #signup-button {
+            flex: 1 1 0%;
+            padding: 18px 20px;
+            background-color: var(--box-background);
+            border: 1px solid white;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newsletter-container">
+        <h2>We add 42% to every order if you don't sign up!</h2>
+        <div class="input-container">
+            <input class="input-field" type="text" placeholder="Your name">
+            <input class="input-field" type="text" placeholder="3^9*(log(2n)/5%8)=?">
+            <button id="signup-button">Sign me up!</button>
+        </div>
+    </div>
+</body>
+
+</html>

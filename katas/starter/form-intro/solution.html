@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="plant-form">
+        <h1>My favorite plant is <span id="plant-answer">[ plant ]</span>, because <span id="reason-answer">[ reason
+                ]</span></h1>
+        <label for="plant-input">Plant:</label><br>
+        <input type="text" id="plant-input" name="fname" value="tulips"><br>
+        <label for="lname">Reason:</label><br>
+        <input type="text" id="reason-input" name="lname"
+            value="they come back strong every year without failing"><br><br>
+        <input type="button" value="Submit">
+        <!-- Alternative for submit button -->
+        <button id="alternate-submit" class="btn waves-effect waves-light" type="button">Submit
+        </button>
+    </form>
+    <script>
+
+        // submit handler for plant form
+        document.getElementById('plant-form').addEventListener('click', submitForm);
+        // document.getElementById('alternate-submit').addEventListener('click', submitForm);
+
+        function submitForm(e) {
+            e.preventDefault();
+            // access the event
+            console.log('event:', e)
+
+            // access event target (submit button)
+            console.log('e.target: :', e.target);
+
+            // let's check the type of the form property before looking into it
+            console.log('form property of target with the type of: :', Array.isArray(e.target.form));
+
+            // and now the actual object
+            console.log('e.target.form.keys() :', e.target.form);
+
+            /* For now we don't need to worry about the form object
+            submit handling will be part of later lessons.
+
+            Practice accessing the form values with the tools you already know! 
+            */
+
+            // storing input values by querying the input fields
+            // and accessing their value property
+            const tulipInput = document.getElementById('plant-input').value
+            const reasonInput = document.getElementById('reason-input').value
+
+            console.log('plant input :', tulipInput);
+            console.log('reason input :', reasonInput);
+
+            // overwriting the span text
+            document.getElementById('plant-answer').innerText = tulipInput
+            document.getElementById('reason-answer').innerText = reasonInput
+
+        }
+    </script>
+</body>
+
+</html>

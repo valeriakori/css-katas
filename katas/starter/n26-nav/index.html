@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.to</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --teal: rgb(54, 161, 139);
+            --hover-background: rgb(72, 172, 152, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        a:hover {
+            background-color: var(--teal);
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 0.125rem 0.25rem 0 lightgray;
+            padding: 1rem;
+            height: ;
+
+        }
+        /* .logo-container {
+            font-size: 1rem;
+            height: 3.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        button {
+            background-color: var(--teal);
+            border-radius: 6px;
+            padding: 5px;
+            border: none;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .action-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 150px;
+        }
+
+        button:hover {
+        box-shadow: 0 0.125rem 0.25rem 0 lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="logo-container">
+            <p>N26</p>
+        </div>
+        <nav>
+            <a href="#">Accounts</a>
+            <a href="#">Manage</a>
+            <a href="#">Financial Products</a>
+            <a href="#">Pay</a>
+            <a href="#">More</a>
+            <a href="#">Blog</a>
+        </nav>
+        <div class="action-section">
+            <i class="fas fa-sign-in-alt"></i><button> Open Bank Account</button>
+        </div>
+    </section>
+</body>
+
+</html>

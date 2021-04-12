@@ -8,6 +8,10 @@
     <title>Dev.to</title>
     <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
     <style>
+        :root {
+            --font: rgb(132, 131, 131);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -18,31 +22,62 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        img {
+        a {
+            text-decoration: none;
+        }
+
+        .nav-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-section img {
             width: 5rem;
         }
 
-        a {
-            text-decoration: none;
+        .nav-section a {
             text-transform: uppercase;
             color: black;
             font-size: 1.5rem;
             margin-left: 1.5rem;
         }
 
+        .footer-section,
+        .footer-section a {
+            color: var(--font);
+        }
 
+        .footer-section ul {
+            list-style-type: none;
 
-        section {
-            display: flex;
-            justify-content: space-between;
+        }
+
+        .footer-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 2rem;
+        }
+
+        .footer-section .newsletter {
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            font-size: 1.5rem;
+        }
+
+        .footer-section .socials-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
     </style>
 </head>
 
 <body>
-    <section>
+    <section class="nav-section">
         <img src="https://devhausleipzig.de/static/media/devhaus-logo.de9b92c3.svg" alt="">
         <nav>
             <a href="#">Academy</a>
@@ -53,6 +88,25 @@
             <a href="#">Contact</a>
         </nav>
     </section>
+
+    <footer class="footer-section">
+        <div class="imprint-section">
+            <ul>
+                <li>&#169; 2021 Code Camp Leipzig</li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Imprint</a></li>
+            </ul>
+        </div>
+        <div class="newsletter"><a href="#">Subscribe to our newsletter</a></div>
+        <div class="socials-section">
+            <ul>
+                <li><a href="#">Meetup</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

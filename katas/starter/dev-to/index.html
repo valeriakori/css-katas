@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.to</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --accent-brand: #3b49df;
+            --accent-brand-darker: #323ebe;
+            --accent-brand-lighter: #4150f5;
+            --accent-brand-a10: rgba(59, 73, 223, 0.10);
+            --background-ghost-hover: rgba(0, 0, 0, 0.035);
+            --blue-background: rgb(59, 73, 223);
+            --blue-background-hover: #323ebe;
+            --background: #eef0f1;
+            --card-border: rgba(8, 9, 10, 0.1);
+            --light-gray: rgb(100, 112, 125);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-section">
+            <div class="dev-logo">DEV</div>
+            <input type="text" class="search-input" placeholder="Search..." />
+        </div>
+
+        <div class="action-buttons">
+            <button class="log-in">Log in</button>
+            <button class="create-account">Create account</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="article">
+            <div class="author-section">
+                <img class="article-logo"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--mbsgKaXh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png"
+                    alt="Article Logo">
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png"
+                    alt="Profile Image">
+                <div class="article-info">
+                    <p><a href="#">Ben Halpern</a> for <a href="#">The DEV Team</a></p>
+                    <a href="#">Apr 7</a>
+                </div>
+            </div>
+            <h2 class="title"><a href="#">Self-Studying Advice from CodeNewbie Community</a></h2>
+            <div class="tags">
+                <a href="#">#forem</a>
+                <a href="#">#codenewbie</a>
+                <a href="#">#programming</a>
+                <a href="#">#productivity</a>
+            </div>
+            <div class="article-footer">
+                <div class="reaction-section">
+                    <div class="reaction"><i class=" far fa-heart"></i> 6 reactions</div>
+                    <div class="coment"><i class="far fa-comment"></i> Add comment</div>
+                </div>
+                <div class="save-section">
+                    <p>1 min read</p>
+                    <button>Save</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

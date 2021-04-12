@@ -57,6 +57,22 @@
           "name": "Grid Template Areas"
         },
         {
+          "id": "dev-to",
+          "name": "Dev.to Navigation and Card"
+        },
+        {
+          "id": "devhaus-nav",
+          "name": "Devhaus Navigation"
+        },
+        {
+          "id": "n26-nav",
+          "name": "N26 Navigation"
+        },
+        {
+          "id": "navigation",
+          "name": "Navigation"
+        },
+        {
           "id": "button",
           "name": "Button"
         },
@@ -75,10 +91,6 @@
         {
           "id": "card",
           "name": "Card"
-        },
-        {
-          "id": "navigation",
-          "name": "Navigation"
         },
         {
           "id": "signin-form",

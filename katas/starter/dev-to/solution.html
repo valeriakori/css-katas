@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.to</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --accent-brand: #3b49df;
+            --accent-brand-darker: #323ebe;
+            --accent-brand-lighter: #4150f5;
+            --accent-brand-a10: rgba(59, 73, 223, 0.10);
+            --background-ghost-hover: rgba(0, 0, 0, 0.035);
+            --blue-background: rgb(59, 73, 223);
+            --blue-background-hover: #323ebe;
+            --background: #eef0f1;
+            --card-border: rgba(8, 9, 10, 0.1);
+            --light-gray: rgb(100, 112, 125);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+        }
+
+        nav {
+            height: 56px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            justify-content: space-between;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 40px;
+        }
+
+        .dev-logo {
+            width: 50px;
+            height: 100%;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-input {
+            box-sizing: border-box;
+            margin: 0 1rem;
+            height: 100%;
+            max-width: 400px;
+            padding: calc(0.5rem - 1px) 0.5rem;
+            flex-grow: 1;
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            height: 40px;
+            font-weight: bolder;
+            border-radius: 5px;
+            margin-right: 0.5rem;
+        }
+
+        .log-in {
+            background-color: white;
+            color: var(--accent-brand);
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+        }
+
+        .log-in:hover {
+            color: var(--accent-brand-darker);
+            background-color: var(--background-ghost-hover);
+        }
+
+        .create-account {
+            background-color: var(--blue-background);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+        }
+
+        .create-account:hover {
+            background-color: var(--blue-background-hover);
+        }
+
+        .article {
+            padding: 1rem;
+            width: 75%;
+            border: 1px solid var(--card-border);
+            background-color: white;
+            margin: 5rem auto;
+        }
+
+        .author-section {
+            position: relative;
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .article-logo {
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+
+        .profile-image {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 1.1rem;
+            left: 1.1rem;
+        }
+
+        .article .tags,
+        .article h2,
+        .article .article-footer {
+            margin-bottom: 0.5rem;
+        }
+
+        .article .author-section a,
+        .article .title a {
+            text-decoration: none;
+            color: black;
+
+            font-weight: bold;
+        }
+
+        .tags>* {
+            color: var(--light-gray);
+            font-weight: 300;
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .reaction-section {
+            display: flex;
+        }
+
+        .reaction-section .reaction {
+            margin-right: 2rem;
+        }
+
+        .save-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .save-section p {
+            margin-right: 1rem;
+        }
+
+        .save-section button {
+            padding: 4px 12px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-section">
+            <div class="dev-logo">DEV</div>
+            <input type="text" class="search-input" placeholder="Search..." />
+        </div>
+
+        <div class="action-buttons">
+            <button class="log-in">Log in</button>
+            <button class="create-account">Create account</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="article">
+            <div class="author-section">
+                <img class="article-logo"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--mbsgKaXh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png"
+                    alt="Article Logo">
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ea1OGrCb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png"
+                    alt="Profile Image">
+                <div class="article-info">
+                    <p><a href="#">Ben Halpern</a> for <a href="#">The DEV Team</a></p>
+                    <a href="#">Apr 7</a>
+                </div>
+            </div>
+            <h2 class="title"><a href="#">Self-Studying Advice from CodeNewbie Community</a></h2>
+            <div class="tags">
+                <a href="#">#forem</a>
+                <a href="#">#codenewbie</a>
+                <a href="#">#programming</a>
+                <a href="#">#productivity</a>
+            </div>
+            <div class="article-footer">
+                <div class="reaction-section">
+                    <div class="reaction"><i class=" far fa-heart"></i> 6 reactions</div>
+                    <div class="coment"><i class="far fa-comment"></i> Add comment</div>
+                </div>
+                <div class="save-section">
+                    <p>1 min read</p>
+                    <button>Save</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

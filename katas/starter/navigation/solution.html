@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img
-            class="logo-icon"
-            src="https://codecampleipzig.de/images/code-camp-leipzig-logo.svg"
-            viewbox="0 0 1024 1024"
-          />
-          <img
-            class="logo-title"
-            src="https://codecampleipzig.de/images/code-camp-leipzig.svg"
-            viewbox="0 0 3130 460"
-          />
-        </div>
-        <ul>
-          <li><a href="">Camp</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: sans-serif;
-      }
-      header {
-        background-color: #f7fafc;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-          0 1px 2px 0 rgba(0, 0, 0, 0.06);
-      }
-      nav {
-        max-width: 64rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-        align-items: center;
-        padding: 0.25rem 1rem;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation</title>
+</head>
 
-      .logo {
-        height: 4rem;
-        display: flex;
-        justify-content: flex-start;
-      }
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img class="logo-icon" src="https://codecampleipzig.de/static/media/code-camp-leipzig-logo.77d9e102.svg"
+          viewbox="0 0 1024 1024" />
+      </div>
+      <ul>
+        <li><a href="">Camp</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      .logo-icon {
-        height: 4rem;
-        width: 4rem;
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-      @media (max-width: 660px) {
-        .logo-title {
-          display: none;
-        }
-      }
+    header {
+      background-color: #f7fafc;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
 
-      header ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 1rem;
-        margin-right: 2rem;
-      }
+    nav {
+      max-width: 64rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
+      padding: 0.25rem 1rem;
+    }
 
-      header a {
-        color: #a0aec0;
-        text-decoration: none;
-      }
+    .logo {
+      height: 4rem;
+      display: flex;
+      justify-content: flex-start;
+    }
 
-      a:hover {
-        color: #4299e1;
+    .logo-icon {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    @media (max-width: 660px) {
+      .logo-title {
+        display: none;
       }
-    </style>
-  </body>
+    }
+
+    header ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      margin-right: 2rem;
+    }
+
+    header a {
+      color: #a0aec0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #4299e1;
+    }
+  </style>
+</body>
+
 </html>

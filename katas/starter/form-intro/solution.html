@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <title>Document</title>
+
+    <style>
+        body {
+            padding: 2rem;
+        }
+    </style>
 </head>
 
 <body>
     <form id="plant-form">
         <h1>My favorite plant is <span id="plant-answer">[ plant ]</span>, because <span id="reason-answer">[ reason
                 ]</span></h1>
+
+        <!-- name attribute has no relation to  label or for/id attribute-->
         <label for="plant-input">Plant:</label><br>
-        <input type="text" id="plant-input" name="fname" value="tulips"><br>
-        <label for="lname">Reason:</label><br>
-        <input type="text" id="reason-input" name="lname"
+        <input type="text" id="plant-input" name="plant-name" value="tulips"><br>
+
+        <label for="reason-input">Reason:</label><br>
+        <input type="text" id="reason-input" name="reason"
             value="they come back strong every year without failing"><br><br>
+
         <input type="button" value="Submit">
         <!-- Alternative for submit button -->
         <button id="alternate-submit" class="btn waves-effect waves-light" type="button">Submit

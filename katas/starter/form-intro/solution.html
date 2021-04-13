@@ -28,8 +28,7 @@
         <input type="text" id="plant-input" name="plant-name" value="tulips"><br>
 
         <label for="reason-input">Reason:</label><br>
-        <input type="text" id="reason-input" name="reason"
-            value="they come back strong every year without failing"><br><br>
+        <input type="text" id="reason-input" name="reason" value="they come back strong every year"><br><br>
 
         <input type="button" value="Submit">
         <!-- Alternative for submit button -->
@@ -74,6 +73,9 @@
             document.getElementById('plant-answer').innerText = tulipInput
             document.getElementById('reason-answer').innerText = reasonInput
 
+            // getting the input fields by querying their name attribute
+            console.log(document.querySelector("input[name='plant-name']"));
+            console.log(document.querySelector("input[name='reason']"));
         }
     </script>
 </body>
